@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedRoyDesigns</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to our Web-Portfolio</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#about-me">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#recent-work">Recent Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about-me">
+        <p>
+          Welcome! I’m Roy, an experienced architect and planner dedicated to
+          transforming spaces with precision, creativity, and a deep
+          understanding of design principles. With a passion for both aesthetics
+          and functionality, I specialize in creating architectural plans, 3D
+          visualizations, and detailed landscape designs that breathe life into
+          every project.
+        </p>
+        <p>
+          Whether you're looking to develop your dream home, enhance your
+          business space, or create a stunning outdoor environment, I offer
+          tailored solutions that bring your vision to reality. My approach
+          combines innovative design techniques with a focus on sustainability,
+          ensuring that each project is both beautiful and practical.
+        </p>
+        <a
+          href="https://www.youtube.com/watch?v=XgPgDaS5nTc&ab_channel=AkashRoy"
+          >This is my first 3D Visualization Project</a
+        >
+      </section>
+      <section id="Services" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="card">
+            <img src="images/site-plan-nauri.jpg" alt="Architectural Plan" />
+            <h3>Architectural Plans</h3>
+            <p>
+              Detailed architectural blueprints for residential & commercial
+              projects.
+            </p>
+          </div>
+          <div class="card">
+            <video width="100%" height="180" autoplay muted loop playsinline>
+              <source src="videos/3d.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>3D Walkthroughs/ Visualizations</h3>
+            <p>
+              Immersive 3D models and video walkthroughs to bring designs to
+              life.
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/e_1.jpg" alt="Landscape Design" />
+            <h3>Landscape Design</h3>
+            <p>
+              Modern, sustainable outdoor planning with greenery, water &
+              hardscape features.
+            </p>
+          </div>
+        </div>
+        <a href="#contact" class="cta-button">Get in Touch</a>
+      </section>
+      <section id="recent-work" data-aos="fade-up">
+        <h3>Our Recent Work</h3>
+        <img src="images/site_plan.jpg" alt="Recent Site Plan" width="500" />
+      </section>
+      <section id="contact" data-aos="fade-up">
+        <h2>Contact Me:</h2>
+        <form
+          action="https://formsubmit.co/royakash975@gmail.com"
+          method="POST"
+        >
+          <label for="name">Name</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="message">Message</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br /><br />
+
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Please Contact us at:
+        <a href="mailto:royakash975@gmail.com">royakash975@gmail.com</a>
+      </p>
+    </footer>
+    <script>
+      // Smooth scroll behavior
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
