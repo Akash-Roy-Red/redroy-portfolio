@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta
+      name="description"
+      content="Akreeva Design Company - Architectural planning, Building Plan, 3D visualization, and landscape design by Akreeva Design Co."
+    />
+    <meta
+      name="keywords"
+      content="Architecture, 3D Visualizations, Landscape Design, Akreeva, Akash Roy, Architect India, Landscape Architect"
+    />
+    <meta name="author" content="Akash Roy" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RedRoyDesigns</title>
+    <title>ArqeevaDesigns</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -17,7 +26,7 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to our Web-Portfolio</h1>
+      <h1>Arqeeva Designs</h1>
     </header>
     <nav class="navbar">
       <ul>
@@ -25,10 +34,20 @@
         <li><a href="#Services">Services</a></li>
         <li><a href="#recent-work">Recent Work</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="dark-mode-toggle">
+            <img
+              src="images/dm.png"
+              alt="dark mode"
+              width="30px"
+              height="30px"
+            />
+          </button>
+        </li>
       </ul>
     </nav>
     <main>
-      <section id="about-me">
+      <section id="about-me" data-aos="zoom-in">
         <p>
           Welcome! I’m Roy, an experienced architect and planner dedicated to
           transforming spaces with precision, creativity, and a deep
@@ -48,13 +67,11 @@
           href="https://www.youtube.com/watch?v=XgPgDaS5nTc&ab_channel=AkashRoy"
           >This is my first 3D Visualization Project</a
         >
-        <button id="helloBtn">Click Me</button>
-<p id="message"></p>
       </section>
-      <section id="Services" data-aos="fade-up">
+      <section id="Services" data-aos="zoom-in">
         <h2>Our Services</h2>
         <div class="services-container">
-          <div class="card">
+          <div class="card-front">
             <img src="images/site-plan-nauri.jpg" alt="Architectural Plan" />
             <h3>Architectural Plans</h3>
             <p>
@@ -62,9 +79,9 @@
               projects.
             </p>
           </div>
-          <div class="card">
+          <div class="card-front">
             <video width="100%" height="180" autoplay muted loop playsinline>
-              <source src="videos/3d.mp4" type="video/mp4" />
+              <source src="videos/3d-compressed.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
             <h3>3D Walkthroughs/ Visualizations</h3>
@@ -73,7 +90,7 @@
               life.
             </p>
           </div>
-          <div class="card">
+          <div class="card-front">
             <img src="images/e_1.jpg" alt="Landscape Design" />
             <h3>Landscape Design</h3>
             <p>
@@ -82,14 +99,26 @@
             </p>
           </div>
         </div>
+        <p>
+          To get more information about the services offered please click show
+          more
+        </p>
+        <div id="moreContent" style="display: none">
+          <img
+            src="images/Landscape.jpg"
+            width="500px"
+            alt="Image failed to load"
+          />
+        </div>
+        <button id="showMoreBtn">Show More</button>
         <a href="#contact" class="cta-button">Get in Touch</a>
       </section>
-      <section id="recent-work" data-aos="fade-up">
+      <section id="recent-work" data-aos="zoom-in">
         <h3>Our Recent Work</h3>
         <img src="images/site_plan.jpg" alt="Recent Site Plan" width="500" />
       </section>
-      <section id="contact" data-aos="fade-up">
-        <h2>Contact Me:</h2>
+      <section id="contact" data-aos="zoom-in">
+        <h2>Let's Work Together</h2>
         <form
           action="https://formsubmit.co/royakash975@gmail.com"
           method="POST"
@@ -130,6 +159,6 @@
     <script>
       AOS.init();
     </script>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
